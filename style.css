@@ -1,0 +1,128 @@
+* {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+} 
+ body {
+     background-color: darkmagenta;
+ }
+
+.document {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.document h1 {
+    font-size: 49px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    color: white; 
+
+}
+.document p {
+    bottom: 10%;
+    font-size: 15px;
+}
+#calculator {
+    height: 420px;
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid rgb(12, 12, 12);
+    padding: 12px;
+    border-radius: 12px;
+    background-color: blue;
+    transform: translateY(40%);
+    align-items: center;
+    justify-content: center;
+    
+}
+#viewer {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border: 1px solid rgb(12, 12, 12);
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 8px;
+    background-color: #e8f0f6ec;
+    word-break: break-word;
+    overflow: hidden;
+    font-size: 36px;
+    font-family: 'Orbitron', sans-serif;
+}
+#keyboards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    
+}
+.bottom-keys {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 250px;
+    justify-content: center;
+    padding-right: -45px;
+    transform: translateX(5px);
+}
+#container-grid {
+    width: 180px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: auto;
+    justify-content: space-between;
+}
+#container-row{
+   display: flex;
+   flex-direction: column;
+   width: 70px;
+   transform: translateX(8px);
+}
+.key {
+    width: 30%;
+    border-radius: 12px;
+    margin-top: 5px ;
+}
+.key1 {
+   margin-right: 15px;
+    width: 50px;
+    height: 70px; 
+    margin-top: 5px;
+    border-radius: 12px;
+    background-color: red;
+    color: white;
+    align-items: flex-end;
+}
+.key:hover , .key1:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
+}
+.eraser {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 230px;
+  height: 20px;
+}
+.eraser button {
+    background-color: yellow;
+    width: 40px;
+    height: 17px;
+    font: 12px bold;
+    border-radius: 12px;
+
+}
+.eraser button:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
+}

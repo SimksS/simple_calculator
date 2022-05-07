@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="document">
+        <h1>Calculadora  simples</h1>
+        <div id="calculator">
+            <div id="viewer"></div>
+            <div id = "keyboards">
+                <div class="eraser">
+                    <button onclick="display('ON')"> ON </button>
+                    <button  onclick="display('OFF')">OFF </button>
+                    <button  onclick="display('C')">C</button>
+                    <button  onclick="display('<')"> < </button>
+                </div>
+                <div class="bottom-keys">
+                    <div id="container-grid">
+                        <button class="key" onclick="insert('7')">7</button>
+                        <button class="key" onclick="insert('8')">8</button>
+                        <button class="key" onclick="insert('9')">9</button>
+                        <button class="key" onclick="insert('4')">4</button>
+                        <button class="key" onclick="insert('5')">5</button>
+                        <button class="key" onclick="insert('6')">6</button>
+                        <button class="key" onclick="insert('1')">1</button>
+                        <button class="key" onclick="insert('2')">2</button>
+                        <button class="key" onclick="insert('3')">3</button>
+                        <button class="key" onclick="insert('0')">0</button>
+                        <button class="key" onclick="insert('.')">.</button>
+                        <button class="key" onclick="insert('+')">+</button>
+                    </div>
+                    <div id="container-row"> 
+                        <button class="key1" onclick="insert('/')">÷</button>
+                        <button class="key1" onclick="insert('*')">X</button>
+                        <button class="key1" onclick="insert('-')">-</button>
+                        <button class="key1" onclick="finish('')">=</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
